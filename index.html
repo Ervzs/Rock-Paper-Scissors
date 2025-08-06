@@ -20,18 +20,24 @@
         
 
         <div class="displayChoices">
-            <div id="player">Player:</div> 
+            <div class="choice-container">
+                <div id="player"></div>
+                <div class="choice-label">Player:</div>
+            </div>
             <div id="countdown">Ready?</div>
-            <div id="computer">Computer:</div>
+            <div class="choice-container">
+                <div id="computer"></div>
+                <div class="choice-label">Computer:</div>
+            </div>
         </div>
 
         <div id="resultDisplay">
         </div>
 
         <div class="choices">
-            <button onclick="playGame('rock')">Rock</button>
-            <button onclick="playGame('paper')">Paper</button>
-            <button onclick="playGame('scissors')">Scissor</button>
+            <button onclick="playGame('rock')"><img src="../assets/rock.png" style="width: 32px; height: 32px"/></button>
+            <button onclick="playGame('paper')"><img src="../assets/paper.png" style="width: 32px; height: 32px"/></button>
+            <button onclick="playGame('scissors')"><img src="../assets/scissors.png" style="width: 32px; height: 32px"/></button>
         </div>
 
     </div>

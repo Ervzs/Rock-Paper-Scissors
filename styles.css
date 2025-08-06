@@ -73,3 +73,13 @@ body{
 .choices button:hover{
     background-color: #fbf7d1;
 }
+
+.choice-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.choice-label {
+    margin-top: 10px;
+    font-weight: bold;
+}

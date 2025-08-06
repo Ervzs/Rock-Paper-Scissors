@@ -20,6 +20,16 @@ function playGame(playerChoice){
         if (countdownNum == countdownAnimation.length){
             clearInterval(interval);
 
+            let computerImgSrc = '';
+            if (computerChoice === 'rock') computerImgSrc = '../assets/rock.png';
+            if (computerChoice === 'paper') computerImgSrc = '../assets/paper.png';
+            if (computerChoice === 'scissors') computerImgSrc = '../assets/scissors.png';
+
+            let playerImgSrc = '';
+            if (playerChoice === 'rock') playerImgSrc = '../assets/rock.png';
+            if (playerChoice === 'paper') playerImgSrc = '../assets/paper.png';
+            if (playerChoice === 'scissors') playerImgSrc = '../assets/scissors.png';
+
             if (playerChoice == 'rock' && computerChoice == 'scissors' || 
             playerChoice == 'paper' && computerChoice == 'rock' || 
             playerChoice == 'scissors' && computerChoice == 'paper') {
@@ -34,12 +44,12 @@ function playGame(playerChoice){
                 computerScore.textContent = parseInt(computerScore.textContent) + 1;
             }
             
-            player.textContent = 'Player 1: ' + playerChoice;
-            computer.textContent = 'Computer: ' + computerChoice;
+            player.innerHTML = '<img src="' + playerImgSrc + '" style="width:100px;height:100px;vertical-align:center" />';
+            computer.innerHTML = '<img src="' + computerImgSrc + '" style="width:100px;height:100px;vertical-align:center" />';
             result.textContent = resultGame;
         
         }
-    }, 400);
+    }, 500);
 
 
     
