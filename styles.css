@@ -1,3 +1,4 @@
+
 body{
     display: flex;
     flex-direction: column;
@@ -6,34 +7,65 @@ body{
     background-color: beige;
 }
 
-#displayChoices{
+#mainContainer{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: rgb(246, 244, 154);
+    align-items: center;
+    justify-content:center;
+}
+
+.displayChoices{
     display: flex;
     flex-direction: row;
     margin: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
-#player1, #computer{
+#player, #computer{
     display: flex;
     border: 10px solid black;
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     border-width: 2px;
-    border-radius: 50px;
+    border-radius: 80px;
     justify-content: center;
     align-items: center;
     background-color:#fbfaed
 }
 
+#countdown {
+    margin: 0 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px; /* optional, for better centering */
+}
+
+#score{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+}
+
 .choices{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content:center;
 }
 
 .choices button{
     border-radius: 10px;
     background-color: #f9f2a1;
-    margin: 10px;
-    margin-top: 20px;
+    margin: 20px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }

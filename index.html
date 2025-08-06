@@ -7,27 +7,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1> Rock Paper Scissors </h1>
 
-    <div id="score">
-        0:0
-    </div>
+    <div id="mainContainer">
 
-    <div id="displayChoices">
-        <div id="player1">Player 1:</div> 
-        <div id="countdown">Shoot!</div>
-        <div id="computer">computer:</div>
-    </div>
+        <h1> Rock Paper Scissors </h1>
 
-    <div id="resultDisplay">
-        It's a TIE!
-    </div>
+        <div id='score'>
+            <div id="playerScore">0</div>
+            :
+            <div id="computerScore">0</div>
+        </div>
+        
 
-    <div class="choices">
-        <button onclick="playGame('rock')">Rock</button>
-        <button onclick="playGame('paper')">Paper</button>
-        <button onclick="playGame('scissors')">Scissor</button>
+        <div class="displayChoices">
+            <div id="player">Player:</div> 
+            <div id="countdown">Ready?</div>
+            <div id="computer">Computer:</div>
+        </div>
+
+        <div id="resultDisplay">
+        </div>
+
+        <div class="choices">
+            <button onclick="playGame('rock')">Rock</button>
+            <button onclick="playGame('paper')">Paper</button>
+            <button onclick="playGame('scissors')">Scissor</button>
+        </div>
+
     </div>
+    
     
 
     <script src="index.js"></script>
